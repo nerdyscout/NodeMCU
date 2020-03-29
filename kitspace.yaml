@@ -6,8 +6,8 @@ multi:
     bom: PIS/PIS_bom.csv
     eda:
       type: kicad
-      pcb: PIS.kicad_pcb
-    gerbers: PWR/gerber
+      pcb: PIS/PIS.kicad_pcb
+    gerbers: PIS/gerber
     color: green
   PWR:
     site: https://nerdyscout.github.io/NodeMCU/PWR
@@ -16,6 +16,6 @@ multi:
     bom: PWR/PWR_bom.csv
     eda:
       type: kicad
-      pcb: PIR.kicad_pcb
+      pcb: PWR/PWR.kicad_pcb
     gerbers: PWR/gerber
     color: green
