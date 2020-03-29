@@ -9,7 +9,7 @@ multi:
       pcb: PIS.kicad_pcb
     gerbers: gerber
     color: green
-  PIR:
+  PWR:
     site: https://nerdyscout.github.io/NodeMCU/PIR
     summary: 230V AC phase dimmer module for NodeMCU_Amica
     readme: README.md

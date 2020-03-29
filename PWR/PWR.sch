@@ -4,7 +4,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "NodeMCUPWR"
+Title "NodeMCU_PWR"
 Date "2020-03-29"
 Rev ""
 Comp "https://nerdyscout.github.io/NodeMCU/PWR"
