@@ -181,7 +181,7 @@ F 4 "PIS" H 7800 4750 50  0001 C CNN "Variant"
 	-1   0    0    1   
 $EndComp
 $Comp
-L ESP8266:NodeMCU1.0(ESP-12E) U1
+L PIS-rescue:NodeMCU1.0(ESP-12E)-ESP8266 U1
 U 1 1 5B936524
 P 8100 2000
 F 0 "U1" H 8100 3050 60  0000 C CNN
@@ -569,15 +569,13 @@ L Connector:Screw_Terminal_01x04 J4
 U 1 1 5C455A67
 P 5700 4800
 F 0 "J4" H 5700 4500 50  0000 C CNN
-F 1 "Screw_Terminal_01x04" V 5850 4800 50  0000 C CNN
+F 1 "Screw_Terminal_01x04" V 5850 4800 50  0001 C CNN
 F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-4_1x04_P2.54mm_Horizontal" H 5700 4800 50  0001 C CNN
 F 3 "~" H 5700 4800 50  0001 C CNN
 F 4 "PIS" H 5700 4800 50  0001 C CNN "Variant"
 	1    5700 4800
 	1    0    0    1   
 $EndComp
-Wire Wire Line
-	2900 5500 3000 5500
 Wire Wire Line
 	3400 4100 3400 4300
 Wire Wire Line
@@ -610,9 +608,9 @@ Wire Wire Line
 	9050 1400 8900 1400
 Wire Wire Line
 	9050 1700 8900 1700
-Text Notes 9500 1300 0    50   ~ 0
+Text Notes 9500 1325 0    50   ~ 0
 LED NodeMCU
-Text Notes 9500 1700 0    50   ~ 0
+Text Notes 9500 1725 0    50   ~ 0
 LED ESP12
 Wire Wire Line
 	2800 2000 3000 2000
@@ -682,35 +680,35 @@ Wire Wire Line
 $Comp
 L Interface_Optical:TSOP17xx U2
 U 1 1 5C55B23F
-P 5800 6750
-F 0 "U2" H 5788 7175 50  0000 C CNN
-F 1 "TSOP17xx" H 5788 7084 50  0000 C CNN
-F 2 "OptoDevice:Vishay_CAST-3Pin" H 5750 6375 50  0001 C CNN
-F 3 "http://www.micropik.com/PDF/tsop17xx.pdf" H 6450 7050 50  0001 C CNN
-F 4 "IR" H 5800 6750 50  0001 C CNN "Variant"
-	1    5800 6750
+P 5800 7000
+F 0 "U2" H 5788 7425 50  0000 C CNN
+F 1 "TSOP17xx" H 5788 7334 50  0000 C CNN
+F 2 "OptoDevice:Vishay_CAST-3Pin" H 5750 6625 50  0001 C CNN
+F 3 "http://www.micropik.com/PDF/tsop17xx.pdf" H 6450 7300 50  0001 C CNN
+F 4 "IR" H 5800 7000 50  0001 C CNN "Variant"
+	1    5800 7000
 	-1   0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0109
 U 1 1 5C55C2F2
-P 5350 7200
-F 0 "#PWR0109" H 5350 6950 50  0001 C CNN
-F 1 "GND" H 5355 7027 50  0000 C CNN
-F 2 "" H 5350 7200 50  0001 C CNN
-F 3 "" H 5350 7200 50  0001 C CNN
-	1    5350 7200
+P 5350 7450
+F 0 "#PWR0109" H 5350 7200 50  0001 C CNN
+F 1 "GND" H 5355 7277 50  0000 C CNN
+F 2 "" H 5350 7450 50  0001 C CNN
+F 3 "" H 5350 7450 50  0001 C CNN
+	1    5350 7450
 	-1   0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR0110
 U 1 1 5C55CAF0
-P 5350 6300
-F 0 "#PWR0110" H 5350 6150 50  0001 C CNN
-F 1 "+5V" H 5365 6473 50  0000 C CNN
-F 2 "" H 5350 6300 50  0001 C CNN
-F 3 "" H 5350 6300 50  0001 C CNN
-	1    5350 6300
+P 5350 6550
+F 0 "#PWR0110" H 5350 6400 50  0001 C CNN
+F 1 "+5V" H 5365 6723 50  0000 C CNN
+F 2 "" H 5350 6550 50  0001 C CNN
+F 3 "" H 5350 6550 50  0001 C CNN
+	1    5350 6550
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
@@ -720,28 +718,23 @@ Wire Wire Line
 $Comp
 L Jumper:Jumper_2_Open JP1
 U 1 1 5C56F029
-P 4150 6750
-F 0 "JP1" H 4150 6985 50  0000 C CNN
-F 1 "Jumper_2_Open" H 4150 6894 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 4150 6750 50  0001 C CNN
-F 3 "~" H 4150 6750 50  0001 C CNN
-F 4 "DNP" H 4150 6750 50  0001 C CNN "Variant"
-	1    4150 6750
+P 4150 7000
+F 0 "JP1" H 4150 7235 50  0000 C CNN
+F 1 "Jumper_2_Open" H 4150 7144 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 4150 7000 50  0001 C CNN
+F 3 "~" H 4150 7000 50  0001 C CNN
+F 4 "DNP" H 4150 7000 50  0001 C CNN "Variant"
+	1    4150 7000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5400 6550 5350 6550
+	5400 6800 5350 6800
 Wire Wire Line
-	5350 6550 5350 6300
+	5350 6800 5350 6550
 Wire Wire Line
-	5350 7200 5350 6950
+	5350 7450 5350 7200
 Wire Wire Line
-	5350 6950 5400 6950
-Wire Wire Line
-	3000 6750 3000 5500
-Connection ~ 3000 5500
-Wire Wire Line
-	3000 5500 3100 5500
+	5350 7200 5400 7200
 Wire Wire Line
 	5350 4100 5350 4800
 $Comp
@@ -766,19 +759,14 @@ Wire Wire Line
 Wire Wire Line
 	4450 5200 5250 5200
 Wire Wire Line
-	4350 6750 4900 6750
+	4350 7000 4900 7000
 Wire Wire Line
 	4900 4600 5500 4600
 Wire Wire Line
-	3000 6750 3950 6750
+	3000 7000 3950 7000
+Connection ~ 4900 7000
 Wire Wire Line
-	4900 4600 4900 6750
-Connection ~ 4900 4600
-Connection ~ 4900 6750
-Wire Wire Line
-	4900 6750 5400 6750
-Text Notes 5450 7100 0    50   ~ 0
-Alternativ zum Relay!
+	4900 7000 5400 7000
 Wire Wire Line
 	3400 4900 3400 5200
 Wire Wire Line
@@ -794,4 +782,51 @@ Wire Wire Line
 	4350 4400 4350 4300
 Wire Wire Line
 	4450 5000 4450 5200
+Wire Notes Line
+	2500 6250 6750 6250
+Wire Wire Line
+	2900 5500 3000 5500
+Wire Wire Line
+	3000 5500 3000 7000
+Connection ~ 3000 5500
+Wire Wire Line
+	3000 5500 3100 5500
+Wire Wire Line
+	4900 4600 4900 7000
+Connection ~ 4900 4600
+Text Notes 5750 6200 0    50   ~ 0
+PLANT
+Text Notes 6250 6375 0    50   ~ 0
+MQTT
+Text Notes 4375 2075 0    50   ~ 0
+use to detect \nwater level
+$Comp
+L Motor:Motor_DC M?
+U 1 1 5E81B505
+P 6325 4700
+F 0 "M?" H 6525 4725 50  0000 L CNN
+F 1 "Motor_DC" H 6525 4625 50  0000 L CNN
+F 2 "" H 6325 4610 50  0001 C CNN
+F 3 "~" H 6325 4610 50  0001 C CNN
+	1    6325 4700
+	1    0    0    -1  
+$EndComp
+Wire Notes Line style solid
+	6325 5000 6000 5000
+Wire Notes Line style solid
+	6000 5000 6000 4900
+Wire Notes Line style solid
+	6000 4900 5775 4900
+Wire Notes Line style solid
+	5775 4600 6000 4600
+Wire Notes Line style solid
+	6000 4600 6000 4500
+Wire Notes Line style solid
+	6000 4500 6325 4500
+Wire Notes Line style solid
+	5775 4800 5875 4800
+Wire Notes Line style solid
+	5875 4800 5875 4700
+Wire Notes Line style solid
+	5875 4700 5775 4700
 $EndSCHEMATC
