@@ -9,13 +9,4 @@ multi:
       pcb: PIS/PIS.kicad_pcb
     gerbers: PIS/gerber
     color: green
-  PWR:
-    site: https://nerdyscout.github.io/NodeMCU/PWR
-    summary: 230V AC phase dimmer module for NodeMCU_Amica
-    readme: PWR/README.md
-    bom: PWR/PWR_bom.csv
-    eda:
-      type: kicad
-      pcb: PWR/PWR.kicad_pcb
-    gerbers: PWR/gerber
-    color: green
+
