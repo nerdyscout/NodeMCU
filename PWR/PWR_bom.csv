@@ -1,7 +1,4 @@
 Reference, Value, Footprint, Datasheet, variant, Distributor, Part Number
-LOGO1,Logo_Open_Hardware_Small,Symbol:OSHW-Symbol_6.7x6mm_SilkScreen,~,DNP,,
-LOGO2,Logo_Open_Hardware_Small,Symbol:KiCad-Logo_6mm_SilkScreen,~,DNP,,
-SYM1,SYM_Flash_Small,Symbol:Symbol_Highvoltage_Type1_CopperTop_Small,~,DNP,,
 J1,Screw_Terminal_01x04,"TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4-5.08_1x04_P5.08mm_Horizontal",~,"DIM, 5V",,
 Q1,TIC206,Package_TO_SOT_THT:TO-220-3_Vertical,http://www.farnell.com/datasheets/56922.pdf,,Conrad,186333 - 62
 U1,MOC3021M,Package_DIP:DIP-6_W7.62mm,http://www.fairchildsemi.com/ds/MO/MOC3020M.pdf,DIM,DigiKey,MOC3021MLT-ND
@@ -13,7 +10,6 @@ R2,R,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal,~,DIM,,
 R4,R,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal,~,DIM,,
 R5,R,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal,~,DIM,,
 PS1,IRM-02-5,Converter_ACDC:Converter_ACDC_MeanWell_IRM-02-xx_THT,http://www.meanwell.com/productPdf.aspx?i=675,5V,DigiKey,1866-3009-ND
-SYM2,SYM_Flash_Small,Symbol:Symbol_Highvoltage_Type1_CopperTop_Small,~,DNP,,
 J3,Conn_01x02,Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical,~,,,
 U3,NodeMCU1.0(ESP-12E),Module:NodeMCU_Amica_WithMountingHoles,,DNP,,
 J5,Conn_01x01,Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical,~,,,
