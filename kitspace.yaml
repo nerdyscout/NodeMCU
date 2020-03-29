@@ -1,0 +1,21 @@
+multi:
+  PIS:
+    site: https://nerdyscout.github.io/NodeMCU/PIS
+    summary: Plant Irrigation System with NodeMCU_Amica
+    readme: README.md
+    bom: PIS_bom.csv
+    eda:
+      type: kicad
+      pcb: PIS.kicad_pcb
+    gerbers: gerber
+    color: green
+  PIR:
+    site: https://nerdyscout.github.io/NodeMCU/PIR
+    summary: 230V AC phase dimmer module for NodeMCU_Amica
+    readme: README.md
+    bom: PIR_bom.csv
+    eda:
+      type: kicad
+      pcb: PIR.kicad_pcb
+    gerbers: gerber
+    color: green
