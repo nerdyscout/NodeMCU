@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/user/Projects/Amica/PWR/PWR.sch</source>
+    <date>So 29 Mär 2020 08:44:49 UTC</date>
+    <tool>Eeschema 5.1.5-52549c5~85~ubuntu18.04.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>PWR.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="LOGO1">
+      <value>Logo_Open_Hardware_Small</value>
+      <footprint>Symbol:OSHW-Symbol_6.7x6mm_SilkScreen</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="variant">DNP</field>
+      </fields>
+      <libsource lib="Graphic" part="Logo_Open_Hardware_Small" description="Open Hardware logo, small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B6B8279</tstamp>
+    </comp>
+    <comp ref="LOGO2">
+      <value>Logo_Open_Hardware_Small</value>
+      <footprint>Symbol:KiCad-Logo_6mm_SilkScreen</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="variant">DNP</field>
+      </fields>
+      <libsource lib="Graphic" part="Logo_Open_Hardware_Small" description="Open Hardware logo, small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B72AEE2</tstamp>
+    </comp>
+    <comp ref="SYM1">
+      <value>SYM_Flash_Small</value>
+      <footprint>Symbol:Symbol_Highvoltage_Type1_CopperTop_Small</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Graphic" part="SYM_Flash_Small" description="Flash symbol, small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B9BF702</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>Screw_Terminal_01x04</value>
+      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4-5.08_1x04_P5.08mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="variant">DIM, 5V</field>
+      </fields>
+      <libsource lib="Connector" part="Screw_Terminal_01x04" description="Generic screw terminal, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B9BFA4A</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>TIC206</value>
+      <footprint>Package_TO_SOT_THT:TO-220-3_Vertical</footprint>
+      <datasheet>http://www.farnell.com/datasheets/56922.pdf</datasheet>
+      <fields>
+        <field name="Distributor">Conrad</field>
+        <field name="Part Number">186333 - 62</field>
+      </fields>
+      <libsource lib="Triac_Thyristor" part="TIC206" description="4A RMS, 400-700V Off-State Voltage, Sensitive Gate Triac, TO-220"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B9C08DC</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>MOC3021M</value>
+      <footprint>Package_DIP:DIP-6_W7.62mm</footprint>
+      <datasheet>http://www.fairchildsemi.com/ds/MO/MOC3020M.pdf</datasheet>
+      <fields>
+        <field name="Distributor">DigiKey</field>
+        <field name="Part Number">MOC3021MLT-ND</field>
+        <field name="variant">DIM</field>
+      </fields>
+      <libsource lib="PWR-rescue" part="MOC3021M-Relay_SolidState-Power-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B9C0A53</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>4N25</value>
+      <footprint>Package_DIP:DIP-6_W7.62mm</footprint>
+      <datasheet>https://www.vishay.com/docs/83725/4n25.pdf</datasheet>
+      <fields>
+        <field name="Distributor">DigiKey</field>
+        <field name="Part Number">160-1300-5-ND</field>
+        <field name="variant">DIM</field>
+      </fields>
+      <libsource lib="Isolator" part="4N25" description="DC Optocoupler Base Connected, Vce 30V, CTR 20%, Viso 2500V, DIP6"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B9C0B9F</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>R</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="variant">DIM</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B9C0E81</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>R</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="variant">DIM</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B9C171F</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>DF06M</value>
+      <footprint>Diode_THT:Diode_Bridge_DIP-4_W7.62mm_P5.08mm</footprint>
+      <datasheet>http://www.vishay.com/docs/88571/dfm.pdf</datasheet>
+      <fields>
+        <field name="Distributor">DigiKey</field>
+        <field name="Part Number">DF06M-ND</field>
+        <field name="variant">DIM</field>
+      </fields>
+      <libsource lib="Diode_Bridge" part="DF06M" description="Miniature Glass Passivated Single-Phase Bridge Rectifiers, 420V Vrms, 1.0A If, DIP-4"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B9C25AE</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>R</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="variant">DIM</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B9C9156</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>R</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="variant">DIM</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B9CEBC7</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>R</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="variant">DIM</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B9D136E</tstamp>
+    </comp>
+    <comp ref="PS1">
+      <value>IRM-02-5</value>
+      <footprint>Converter_ACDC:Converter_ACDC_MeanWell_IRM-02-xx_THT</footprint>
+      <datasheet>http://www.meanwell.com/productPdf.aspx?i=675</datasheet>
+      <fields>
+        <field name="Distributor">DigiKey</field>
+        <field name="Part Number">1866-3009-ND</field>
+        <field name="variant">5V</field>
+      </fields>
+      <libsource lib="PWR-rescue" part="IRM-02-5-Converter_ACDC-Power-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B9C1D83</tstamp>
+    </comp>
+    <comp ref="SYM2">
+      <value>SYM_Flash_Small</value>
+      <footprint>Symbol:Symbol_Highvoltage_Type1_CopperTop_Small</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Graphic" part="SYM_Flash_Small" description="Flash symbol, small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BDB32DB</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>Conn_01x02</value>
+      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C438B5D</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>NodeMCU1.0(ESP-12E)</value>
+      <footprint>Module:NodeMCU_Amica_WithMountingHoles</footprint>
+      <fields>
+        <field name="variant">DNP</field>
+      </fields>
+      <libsource lib="PWR-rescue" part="NodeMCU1.0(ESP-12E)-ESP8266-Power-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B6B53D8</tstamp>
+    </comp>
+    <comp ref="J5">
+      <value>Conn_01x01</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x01" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C443EDC</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>Conn_01x01</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x01" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C44016A</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="Screw_Terminal_01x04">
+      <description>Generic screw terminal, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TerminalBlock*:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Screw_Terminal_01x04</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x01">
+      <description>Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x01</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x02">
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Diode_Bridge" part="B40C800DM">
+      <aliases>
+        <alias>B80C800DM</alias>
+        <alias>B125C800DM</alias>
+        <alias>B250C800DM</alias>
+        <alias>B380C800DM</alias>
+        <alias>DF005M</alias>
+        <alias>DF01M</alias>
+        <alias>DF02M</alias>
+        <alias>DF04M</alias>
+        <alias>DF06M</alias>
+        <alias>DF08M</alias>
+        <alias>DF10M</alias>
+      </aliases>
+      <description>Glass Passivated Single-Phase Bridge Rectifier, 40V Vrms, 0.8A If, DIP-4</description>
+      <docs>https://www.vishay.com/docs/88533/800dm.pdf</docs>
+      <footprints>
+        <fp>Diode*Bridge*DIP*W7.62mm*P5.08mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">B40C800DM</field>
+        <field name="Footprint">Diode_THT:Diode_Bridge_DIP-4_W7.62mm_P5.08mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="-" type="passive"/>
+        <pin num="3" name="~~" type="passive"/>
+        <pin num="4" name="~~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Graphic" part="Logo_Open_Hardware_Small">
+      <description>Open Hardware logo, small</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">#LOGO</field>
+        <field name="Value">Logo_Open_Hardware_Small</field>
+      </fields>
+    </libpart>
+    <libpart lib="Graphic" part="SYM_Flash_Small">
+      <description>Flash symbol, small</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">#SYM</field>
+        <field name="Value">SYM_Flash_Small</field>
+      </fields>
+    </libpart>
+    <libpart lib="Isolator" part="4N25">
+      <aliases>
+        <alias>4N26</alias>
+        <alias>TIL111</alias>
+        <alias>4N27</alias>
+        <alias>4N28</alias>
+        <alias>4N35</alias>
+        <alias>4N36</alias>
+        <alias>4N37</alias>
+      </aliases>
+      <description>DC Optocoupler Base Connected, Vce 30V, CTR 20%, Viso 2500V, DIP6</description>
+      <docs>https://www.vishay.com/docs/83725/4n25.pdf</docs>
+      <footprints>
+        <fp>DIP*W7.62mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">4N25</field>
+        <field name="Footprint">Package_DIP:DIP-6_W7.62mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="NC" type="NotConnected"/>
+        <pin num="4" name="~" type="passive"/>
+        <pin num="5" name="~" type="passive"/>
+        <pin num="6" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="PWR-rescue" part="IRM-02-5-Converter_ACDC-Power-rescue">
+      <footprints>
+        <fp>Converter*ACDC*MeanWell*IRM*02*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">PS</field>
+        <field name="Value">IRM-02-5-Converter_ACDC-Power-rescue</field>
+        <field name="Footprint">Converter_ACDC:Converter_ACDC_MeanWell_IRM-02-xx_THT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="AC/N" type="power_in"/>
+        <pin num="2" name="AC/L" type="power_in"/>
+        <pin num="3" name="-Vout" type="power_out"/>
+        <pin num="4" name="+Vout" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="PWR-rescue" part="MOC3021M-Relay_SolidState-Power-rescue">
+      <footprints>
+        <fp>DIP*W7.62mm*</fp>
+        <fp>SMDIP*W9.53mm*</fp>
+        <fp>DIP*W10.16mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MOC3021M-Relay_SolidState-Power-rescue</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="NC" type="NotConnected"/>
+        <pin num="4" name="~" type="passive"/>
+        <pin num="5" name="NC" type="NotConnected"/>
+        <pin num="6" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="PWR-rescue" part="NodeMCU1.0(ESP-12E)-ESP8266-Power-rescue">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">NodeMCU1.0(ESP-12E)-ESP8266-Power-rescue</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A0(ADC0)" type="input"/>
+        <pin num="2" name="RSV" type="input"/>
+        <pin num="3" name="RSV" type="input"/>
+        <pin num="4" name="SD3(GPIO10)" type="input"/>
+        <pin num="5" name="SD2(GPIO9)" type="input"/>
+        <pin num="6" name="SD1(MOSI)" type="input"/>
+        <pin num="7" name="CMD(CS)" type="input"/>
+        <pin num="8" name="SDO(MISO)" type="input"/>
+        <pin num="9" name="CLK(SCLK)" type="input"/>
+        <pin num="10" name="GND" type="input"/>
+        <pin num="11" name="3.3V" type="input"/>
+        <pin num="12" name="EN" type="input"/>
+        <pin num="13" name="RST" type="input"/>
+        <pin num="14" name="GND" type="input"/>
+        <pin num="15" name="VIN" type="input"/>
+        <pin num="16" name="3.3V" type="input"/>
+        <pin num="17" name="GND" type="input"/>
+        <pin num="18" name="TX(GPIO1)" type="input"/>
+        <pin num="19" name="RX(DPIO3)" type="input"/>
+        <pin num="20" name="D8(GPIO15)" type="input"/>
+        <pin num="21" name="D7(GPIO13)" type="input"/>
+        <pin num="22" name="D6(GPIO12)" type="input"/>
+        <pin num="23" name="D5(GPIO14)" type="input"/>
+        <pin num="24" name="GND" type="input"/>
+        <pin num="25" name="3.3V" type="input"/>
+        <pin num="26" name="D4(GPIO2)" type="input"/>
+        <pin num="27" name="D3(GPIO0)" type="input"/>
+        <pin num="28" name="D2(GPIO4)" type="input"/>
+        <pin num="29" name="D1(GPIO5)" type="input"/>
+        <pin num="30" name="D0(GPIO16)" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Triac_Thyristor" part="TIC226">
+      <aliases>
+        <alias>TIC206</alias>
+        <alias>BT138-600</alias>
+        <alias>BT138-800</alias>
+        <alias>TIC216</alias>
+        <alias>BT136-500</alias>
+        <alias>BT136-600</alias>
+        <alias>BT136-800</alias>
+        <alias>BT139-600</alias>
+      </aliases>
+      <description>8A RMS, 400-800V Off-State Voltage, Triac, TO-220</description>
+      <docs>http://pdf.datasheetcatalog.com/datasheet/PowerInnovations/mXuqxvy.pdf</docs>
+      <footprints>
+        <fp>TO?220*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">TIC226</field>
+        <field name="Footprint">Package_TO_SOT_THT:TO-220-3_Vertical</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A1" type="passive"/>
+        <pin num="2" name="A2" type="passive"/>
+        <pin num="3" name="G" type="input"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>/home/user/Projects/kicad-symbols/Connector.lib</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>/home/user/Projects/kicad-symbols/Connector_Generic.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>/home/user/Projects/kicad-symbols/Device.lib</uri>
+    </library>
+    <library logical="Diode_Bridge">
+      <uri>/home/user/Projects/kicad-symbols/Diode_Bridge.lib</uri>
+    </library>
+    <library logical="Graphic">
+      <uri>/home/user/Projects/kicad-symbols/Graphic.lib</uri>
+    </library>
+    <library logical="Isolator">
+      <uri>/home/user/Projects/kicad-symbols/Isolator.lib</uri>
+    </library>
+    <library logical="PWR-rescue">
+      <uri>/home/user/Projects/Amica/PWR/PWR-rescue.lib</uri>
+    </library>
+    <library logical="Triac_Thyristor">
+      <uri>/home/user/Projects/kicad-symbols/Triac_Thyristor.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+5V">
+      <node ref="PS1" pin="4"/>
+      <node ref="R5" pin="2"/>
+      <node ref="U3" pin="15"/>
+      <node ref="J5" pin="1"/>
+    </net>
+    <net code="2" name="zero">
+      <node ref="R5" pin="1"/>
+      <node ref="U3" pin="23"/>
+      <node ref="U2" pin="5"/>
+    </net>
+    <net code="3" name="GND">
+      <node ref="U3" pin="24"/>
+      <node ref="U3" pin="10"/>
+      <node ref="U3" pin="14"/>
+      <node ref="U3" pin="17"/>
+      <node ref="J3" pin="1"/>
+      <node ref="U1" pin="2"/>
+      <node ref="PS1" pin="3"/>
+      <node ref="U2" pin="4"/>
+    </net>
+    <net code="4" name="Net-(J1-Pad3)">
+      <node ref="Q1" pin="1"/>
+      <node ref="J1" pin="3"/>
+    </net>
+    <net code="5" name="Net-(R4-Pad1)">
+      <node ref="U1" pin="1"/>
+      <node ref="R4" pin="1"/>
+    </net>
+    <net code="6" name="dim">
+      <node ref="U3" pin="22"/>
+      <node ref="R4" pin="2"/>
+    </net>
+    <net code="7" name="Net-(U3-Pad28)">
+      <node ref="U3" pin="28"/>
+    </net>
+    <net code="8" name="Net-(U3-Pad29)">
+      <node ref="U3" pin="29"/>
+    </net>
+    <net code="9" name="Net-(U3-Pad3)">
+      <node ref="U3" pin="3"/>
+    </net>
+    <net code="10" name="Net-(J2-Pad1)">
+      <node ref="J2" pin="1"/>
+      <node ref="U3" pin="30"/>
+    </net>
+    <net code="11" name="Net-(U3-Pad4)">
+      <node ref="U3" pin="4"/>
+    </net>
+    <net code="12" name="Net-(U3-Pad5)">
+      <node ref="U3" pin="5"/>
+    </net>
+    <net code="13" name="Net-(U3-Pad6)">
+      <node ref="U3" pin="6"/>
+    </net>
+    <net code="14" name="Net-(U3-Pad7)">
+      <node ref="U3" pin="7"/>
+    </net>
+    <net code="15" name="Net-(U3-Pad8)">
+      <node ref="U3" pin="8"/>
+    </net>
+    <net code="16" name="Net-(U3-Pad9)">
+      <node ref="U3" pin="9"/>
+    </net>
+    <net code="17" name="Net-(J3-Pad2)">
+      <node ref="U3" pin="1"/>
+      <node ref="J3" pin="2"/>
+    </net>
+    <net code="18" name="Net-(U3-Pad27)">
+      <node ref="U3" pin="27"/>
+    </net>
+    <net code="19" name="Net-(U3-Pad26)">
+      <node ref="U3" pin="26"/>
+    </net>
+    <net code="20" name="Net-(U3-Pad20)">
+      <node ref="U3" pin="20"/>
+    </net>
+    <net code="21" name="Net-(U3-Pad11)">
+      <node ref="U3" pin="11"/>
+    </net>
+    <net code="22" name="Net-(U3-Pad12)">
+      <node ref="U3" pin="12"/>
+    </net>
+    <net code="23" name="Net-(U3-Pad13)">
+      <node ref="U3" pin="13"/>
+    </net>
+    <net code="24" name="Net-(U3-Pad16)">
+      <node ref="U3" pin="16"/>
+    </net>
+    <net code="25" name="Net-(U3-Pad18)">
+      <node ref="U3" pin="18"/>
+    </net>
+    <net code="26" name="Net-(U3-Pad19)">
+      <node ref="U3" pin="19"/>
+    </net>
+    <net code="27" name="Net-(U3-Pad2)">
+      <node ref="U3" pin="2"/>
+    </net>
+    <net code="28" name="Net-(U3-Pad21)">
+      <node ref="U3" pin="21"/>
+    </net>
+    <net code="29" name="Net-(U3-Pad25)">
+      <node ref="U3" pin="25"/>
+    </net>
+    <net code="30" name="Net-(U1-Pad3)">
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="31" name="Net-(Q1-Pad3)">
+      <node ref="Q1" pin="3"/>
+      <node ref="U1" pin="4"/>
+    </net>
+    <net code="32" name="Net-(U1-Pad5)">
+      <node ref="U1" pin="5"/>
+    </net>
+    <net code="33" name="Net-(R2-Pad2)">
+      <node ref="R2" pin="2"/>
+      <node ref="U1" pin="6"/>
+    </net>
+    <net code="34" name="Net-(D1-Pad2)">
+      <node ref="U2" pin="2"/>
+      <node ref="D1" pin="2"/>
+    </net>
+    <net code="35" name="Net-(D1-Pad1)">
+      <node ref="U2" pin="1"/>
+      <node ref="D1" pin="1"/>
+    </net>
+    <net code="36" name="VAC">
+      <node ref="R2" pin="1"/>
+      <node ref="PS1" pin="2"/>
+      <node ref="R1" pin="1"/>
+      <node ref="Q1" pin="2"/>
+      <node ref="J1" pin="1"/>
+    </net>
+    <net code="37" name="Net-(U2-Pad3)">
+      <node ref="U2" pin="3"/>
+    </net>
+    <net code="38" name="Net-(U2-Pad6)">
+      <node ref="U2" pin="6"/>
+    </net>
+    <net code="39" name="NEUT">
+      <node ref="PS1" pin="1"/>
+      <node ref="R3" pin="1"/>
+      <node ref="J1" pin="2"/>
+      <node ref="J1" pin="4"/>
+    </net>
+    <net code="40" name="Net-(D1-Pad3)">
+      <node ref="R3" pin="2"/>
+      <node ref="D1" pin="3"/>
+    </net>
+    <net code="41" name="Net-(D1-Pad4)">
+      <node ref="R1" pin="2"/>
+      <node ref="D1" pin="4"/>
+    </net>
+  </nets>
+</export>
