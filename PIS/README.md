@@ -45,7 +45,9 @@ Rule2 on
 
 Changing mem1 value (can also be done via MQTT) results in new nominal value, every plant may need other value depending on size, soil, sunlight, ... so you need to play a bit to find a good value. 
 
-### Variant: MQTT - IR Bridge
+### Variant: Powerfull Infrared Span
+
+this is an MQTT-IR Bridge
 
 #### Assembling
 
@@ -55,4 +57,6 @@ Changing mem1 value (can also be done via MQTT) results in new nominal value, ev
 
 #### Software
 
-tbd
+Just use [Tasmota](https://github.com/arendst/Tasmota) and 
+todo: further description
+
