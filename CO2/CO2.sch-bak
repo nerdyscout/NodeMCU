@@ -54,18 +54,6 @@ Wire Wire Line
 	7300 2200 7150 2200
 Wire Wire Line
 	7150 2700 7300 2700
-$Comp
-L Graphic:Logo_Open_Hardware_Small LOGO1
-U 1 1 5B6B8279
-P 8425 6050
-F 0 "LOGO1" H 8425 6436 50  0001 C CNN
-F 1 "Logo_Open_Hardware_Small" H 8425 6345 50  0001 C CNN
-F 2 "Symbol:ttn_cloud" H 8425 6344 50  0001 C CNN
-F 3 "~" H 8425 6050 50  0001 C CNN
-F 4 "DNP" H 8425 6050 50  0001 C CNN "Variant"
-	1    8425 6050
-	1    0    0    -1  
-$EndComp
 Text GLabel 6800 1300 0    50   Input ~ 0
 A0
 NoConn ~ 7300 2100
@@ -88,18 +76,6 @@ F 2 "" H 7150 2700 50  0001 C CNN
 F 3 "" H 7150 2700 50  0001 C CNN
 	1    7150 2700
 	0    -1   -1   0   
-$EndComp
-$Comp
-L Graphic:Logo_Open_Hardware_Small LOGO2
-U 1 1 5C3F045C
-P 7250 6850
-F 0 "LOGO2" H 7250 7236 50  0001 C CNN
-F 1 "Logo_Open_Hardware_Small" H 7250 7145 50  0001 C CNN
-F 2 "Symbol:ttn_txt" H 7250 7144 50  0001 C CNN
-F 3 "~" H 7250 6850 50  0001 C CNN
-F 4 "DNP" H 7250 6850 50  0001 C CNN "Variant"
-	1    7250 6850
-	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR011
