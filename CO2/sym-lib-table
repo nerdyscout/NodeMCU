@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name ESP8266)(type Legacy)(uri /home/user/Projects/Shields/NodeMCU_/lib/ESP8266.lib)(options "")(descr ""))
+  (lib (name CO2-rescue)(type Legacy)(uri ${KIPRJMOD}/CO2-rescue.lib)(options "")(descr ""))
+)

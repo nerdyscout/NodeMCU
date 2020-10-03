@@ -1,4 +1,4 @@
-update=So 29 Mär 2020 08:02:52 UTC
+update=So 29 Mär 2020 17:48:15 UTC
 version=1
 last_client=kicad
 [general]
@@ -65,7 +65,7 @@ SolderMaskMinWidth=0.25
 SolderPasteClearance=0
 SolderPasteRatio=-0
 [pcbnew/Layer.F.Cu]
-Name=F.GND
+Name=F.Cu
 Type=2
 Enabled=1
 [pcbnew/Layer.In1.Cu]
@@ -189,7 +189,7 @@ Name=In30.Cu
 Type=0
 Enabled=0
 [pcbnew/Layer.B.Cu]
-Name=B.GND
+Name=B.Cu
 Type=2
 Enabled=1
 [pcbnew/Layer.B.Adhes]
