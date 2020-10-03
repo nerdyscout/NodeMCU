@@ -13,7 +13,7 @@ multi:
     site: https://nerdyscout.github.io/NodeMCU/PWR
     summary: 230V AC phase dimmer module for NodeMCU_Amica
     readme: README.md
-    bom: PWR_bom.csv
+    bom: PWR/PWR_bom.csv
     eda:
       type: kicad
       pcb: PWR/PWR.kicad_pcb
