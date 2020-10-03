@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# AP2112K-3.3-Regulator_Linear
+# AP2112K-3.3-Regulator_Linear-CO2-rescue
 #
-DEF AP2112K-3.3-Regulator_Linear U 0 10 Y Y 1 F N
+DEF AP2112K-3.3-Regulator_Linear-CO2-rescue U 0 10 Y Y 1 F N
 F0 "U" -200 225 50 H V L CNN
-F1 "AP2112K-3.3-Regulator_Linear" 0 225 50 H V L CNN
+F1 "AP2112K-3.3-Regulator_Linear-CO2-rescue" 0 225 50 H V L CNN
 F2 "Package_TO_SOT_SMD:SOT-23-5" 0 325 50 H I C CNN
 F3 "" 0 100 50 H I C CNN
 $FPLIST
@@ -21,11 +21,11 @@ X VOUT 5 300 100 100 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
-# Jumper_NC_Small-Device
+# Jumper_NC_Small-Device-CO2-rescue
 #
-DEF Jumper_NC_Small-Device JP 0 30 N N 1 F N
+DEF Jumper_NC_Small-Device-CO2-rescue JP 0 30 N N 1 F N
 F0 "JP" 0 80 50 H V C CNN
-F1 "Jumper_NC_Small-Device" 10 -60 50 H V C CNN
+F1 "Jumper_NC_Small-Device-CO2-rescue" 10 -60 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -40,11 +40,11 @@ X 2 2 100 0 40 L 50 50 0 1 P
 ENDDRAW
 ENDDEF
 #
-# NodeMCU_1.0_(ESP-12E)-ESP8266
+# NodeMCU_1.0_(ESP-12E)-ESP8266-CO2-rescue
 #
-DEF NodeMCU_1.0_(ESP-12E)-ESP8266 U 0 40 Y Y 1 F N
+DEF NodeMCU_1.0_(ESP-12E)-ESP8266-CO2-rescue U 0 40 Y Y 1 F N
 F0 "U" 0 850 60 H V C CNN
-F1 "NodeMCU_1.0_(ESP-12E)-ESP8266" 0 -850 60 H V C CNN
+F1 "NodeMCU_1.0_(ESP-12E)-ESP8266-CO2-rescue" 0 -850 60 H V C CNN
 F2 "" -600 -850 60 H V C CNN
 F3 "" -600 -850 60 H V C CNN
 DRAW
