@@ -15,7 +15,7 @@ preflight:
       regexp:  'Conflict problem between pins'
     - filter_msg: 'Courtyards overlap'
       error_number: 45
-      regexp:  'Courtyards overlap'
+      regexp:  'Footprint U1 on B.Cu'
     - filter_msg: 'Footprint has no courtyard defined'
       error_number: 46
       regexp:  'Footprint LOGO'
