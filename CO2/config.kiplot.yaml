@@ -162,28 +162,6 @@ outputs:
     dir: docs
     options:
       output: '%p-Schematic.%x'
-            
-  - name: 'print board'
-    comment: "Print board (PDF) front"
-    type: pdf_pcb_print
-    layers:
-      - 'user'
-      - layer: F.CrtYd
-      - layer: F.Fab
-    dir: docs
-    options:
-      output: '%p-Board_top.%x'
-
-  - name: 'print board'
-    comment: "Print board (PDF) bottom"
-    type: pdf_pcb_print
-    layers:
-      - layer: Edge.Cuts
-      - layer: B.CrtYd
-      - layer: B.Fab
-    dir: docs
-    options:
-      output: '%p-Board_bottom.%x'
 
   # KiBoM (KiCad Bill of Materials):
   # For more information: https://github.com/INTI-CMNB/KiBoM
