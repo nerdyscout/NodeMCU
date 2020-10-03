@@ -7,6 +7,16 @@ multi:
     eda:
       type: kicad
       pcb: PIS/PIS.kicad_pcb
-    gerbers: PIS/gerber
+    gerbers: PIS/gerbers
+    color: green
+  CO2:
+    site: https://nerdyscout.github.io/NodeMCU/CO2
+    summary: CO2 Measrument with NodeMCU
+    readme: CO2/README.md
+    bom: CO2/docs/bom.csv
+    eda:
+      type: kicad
+      pcb: CO2/CO2.kicad_pcb
+    gerbers: CO2/gerbers
     color: green
 
