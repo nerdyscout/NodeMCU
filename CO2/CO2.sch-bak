@@ -116,7 +116,7 @@ F 4 "PIS" H 9850 3675 50  0001 C CNN "Variant"
 	-1   0    0    1   
 $EndComp
 $Comp
-L ESP8266:NodeMCU_1.0_(ESP-12E) U1
+L CO2-rescue:NodeMCU_1.0_(ESP-12E)-ESP8266 U1
 U 1 1 5B936524
 P 8100 2000
 F 0 "U1" H 8100 3050 60  0000 C CNN
@@ -430,7 +430,7 @@ NoConn ~ 8400 4725
 NoConn ~ 8400 4625
 NoConn ~ 7300 1700
 $Comp
-L Regulator_Linear:AP2112K-3.3 U5
+L CO2-rescue:AP2112K-3.3-Regulator_Linear U5
 U 1 1 5F77DDDD
 P 4375 6600
 F 0 "U5" H 4400 7000 50  0000 C CNN
@@ -882,7 +882,7 @@ Wire Wire Line
 Wire Wire Line
 	10200 3575 10050 3575
 $Comp
-L Device:Jumper_NC_Small JP1
+L CO2-rescue:Jumper_NC_Small-Device JP1
 U 1 1 5F84B155
 P 2250 1750
 F 0 "JP1" H 2250 1900 50  0000 C CNN
