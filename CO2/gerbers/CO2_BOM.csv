@@ -1,0 +1,16 @@
+Component;Description;Part;References;Value;Footprint;Quantity Per PCB;Datasheet;variant
+1;Unpolarized capacitor;C;C1 C3 C4 C5;100n;C_0603_1608Metric;4;~;
+2;Unpolarized capacitor;C;C2;10µF;C_0603_1608Metric;1;~;
+3;Light emitting diode;LED;D4 D5;LED;LED_0603_1608Metric;2;~;
+4;RGB LED with integrated controller;WS2812B;D1 D2 D3;WS2812B;LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm;3;https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf;
+5;coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, ...);Conn_Coaxial;J1 J5;Conn_Coaxial;U.FL_Hirose_U.FL-R-SMT-1_Vertical;2; ~;
+6;Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/);Conn_01x04;J2;Display;PinHeader_1x04_P2.54mm_Vertical;1;~;PIS
+7;Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/);Conn_01x02;J4;JST;JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal;1;~;
+8;Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/);Conn_01x06;J3;SCD30;PinHeader_1x06_P2.54mm_Vertical;1;~;
+9;NPN transistor, base/collector/emitter;Q_NPN_BCE;Q1;Q_NPN_BCE;SOT-23;1;~;
+10;Resistor;R;R1 R2 R3 R5 R6 R7;1k;R_0603_1608Metric;6;~;
+11;Resistor;R;R4;2k;R_0603_1608Metric;1;~;
+12;600mA low dropout linear regulator, with enable pin, 3.8V-6V input voltage range, 3.3V fixed positive output, SOT-23-5 package;AP2112K-3.3;U5;AP2112K-3.3;SOT-23-5;1;https://www.diodes.com/assets/Datasheets/AP2112.pdf;
+13;GNSS Module M8, VCC 2.7V to 3.6V;MAX-8Q;U3;MAX-8Q;ublox_MAX;1;https://www.u-blox.com/sites/default/files/MAX-8_DataSheet_%28UBX-16000093%29.pdf;
+14;Single cell, Li-Ion/Li-Po charge management controller, 4.20V, Tri-State Status Output, in SOT23-5 package;MCP73831-2-OT;U4;MCP73831-2-OT;SOT-23-5;1;http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf;
+15;Low power long range transceiver module, SPI and parallel interface, 868 MHz, spreading factor 6 to12, bandwith 7.8 to 500kHz, -111 to -148 dBm, SMD-16, DIP-16;RFM95W-868S2;U2;RFM95W-868S2;HOPERF_RFM9XW_SMD;1;https://www.hoperf.com/data/upload/portal/20181127/5bfcbea20e9ef.pdf;

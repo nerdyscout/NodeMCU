@@ -1,0 +1,5 @@
+Component;Description;Part;References;Value;Footprint;Quantity Per PCB;Datasheet;variant;distributor;part number
+1;Light emitting diode;LED;D2;LED;LED_D5.0mm;1;~;;;
+2;0.1A Ic, 45V Vce, Small Signal NPN Transistor, TO-92;BC547;Q1;BC547;TO-92_Inline;1;http://www.fairchildsemi.com/ds/BC/BC547.pdf;;DigiKey;BC547-ND
+3;Resistor;R;R4;100;R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal;1;~;;;
+4;Photo Modules for PCM Remote Control Systems;TSOP17xx;U2;TSOP17xx;Vishay_CAST-3Pin;1;http://www.micropik.com/PDF/tsop17xx.pdf;+IR,-PIS;;

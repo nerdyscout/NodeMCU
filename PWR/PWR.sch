@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "NodeMCU_PWR"
-Date "2020-03-29"
+Date "2020-10-04"
 Rev ""
 Comp "https://nerdyscout.github.io/NodeMCU/PWR"
 Comment1 ""
@@ -179,7 +179,7 @@ F 5 "186333 - 62" H 5200 5500 50  0001 C CNN "Part Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR-rescue:MOC3021M-Relay_SolidState-Power-rescue-PWR-rescue U1
+L Relay_SolidState:MOC3021M U1
 U 1 1 5B9C0A53
 P 3900 5500
 F 0 "U1" H 3900 5825 50  0000 C CNN
@@ -425,7 +425,7 @@ $EndComp
 Wire Wire Line
 	1750 2700 1900 2700
 $Comp
-L PWR-rescue:IRM-02-5-Converter_ACDC-Power-rescue-PWR-rescue PS1
+L Converter_ACDC:IRM-02-5 PS1
 U 1 1 5B9C1D83
 P 6750 2000
 F 0 "PS1" H 6750 2325 50  0000 C CNN
@@ -510,7 +510,7 @@ F 3 "~" H 1300 1500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L PWR-rescue:NodeMCU1.0(ESP-12E)-ESP8266-Power-rescue-PWR-rescue U3
+L ESP8266:NodeMCU_1.0_(ESP-12E) U3
 U 1 1 5B6B53D8
 P 2700 2100
 F 0 "U3" H 2700 3150 60  0000 C CNN

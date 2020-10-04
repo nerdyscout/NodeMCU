@@ -3,9 +3,12 @@
 Plant Irrigation Shield for the NodeMCU_Amica.
 
 ## Schematic
-[![schematic](PIS.svg)](PIS.pdf)
+[![schematic](docs/NodeMCU_PIS-Schematic.svg)](docs/NodeMCU_PIS-Schematic.pdf)
 
-## Documentation
+## Layout
+![top](docs/img/PIS-Board_top.svg) ![bottom](docs/img/PIS-Board_bottom.svg)
+
+## Documentation 
 
 This PCB can be assembled in two variants with complete independent functions.
 
@@ -15,7 +18,7 @@ This PCB can be assembled in two variants with complete independent functions.
 
 <img src="IMG_20200221_150840.jpg" width="250" alt="IMG_20200221_150840.jpg"> <img src="IMG_20200221_150518.jpg" width="250" alt="IMG_20200221_150518.jpg">
 
-- Assemble all parts according [BOM](PIS_bom.csv)
+- Assemble all parts according [BOM](gerbers/PIS_BOM_PIS.csv)
   - there are some slight more variants depending if you want to use an capacetive or resestive soil moisture sensor
   - the status LED is optional
   - the pullup/pulldown resistors should only be placed if needed 
@@ -51,7 +54,7 @@ this is an MQTT-IR Bridge
 
 #### Assembling
 
-- Assemble all parts according [BOM](PIS_bom.csv)
+- Assemble all parts according [BOM](PIS_bom_IR.csv)
   - make R4 fit to your LED, it might be even 0Ohm
   - close JP1
 

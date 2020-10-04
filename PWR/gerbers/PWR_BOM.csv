@@ -1,0 +1,11 @@
+Component;Description;Part;References;Value;Footprint;Quantity Per PCB;Datasheet;distributor;part number;variant
+1;Miniature Glass Passivated Single-Phase Bridge Rectifiers, 420V Vrms, 1.0A If, DIP-4;DF06M;D1;DF06M;Diode_Bridge_DIP-4_W7.62mm_P5.08mm;1;http://www.vishay.com/docs/88571/dfm.pdf;DigiKey;DF06M-ND;DIM
+2;Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/);Conn_01x01;J2 J5;Conn_01x01;PinHeader_1x01_P2.54mm_Vertical;2;~;;;
+3;Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/);Conn_01x02;J3;Conn_01x02;PinSocket_1x02_P2.54mm_Vertical;1;~;;;
+4;Generic screw terminal, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/);Screw_Terminal_01x04;J1;Screw_Terminal_01x04;TerminalBlock_Phoenix_MKDS-1,5-4-5.08_1x04_P5.08mm_Horizontal;1;~;;;DIM, 5V
+5;5V 2W miniature AC-DC module-type power supply MeanWell;IRM-02-5;PS1;IRM-02-5;Converter_ACDC_MeanWell_IRM-02-xx_THT;1;http://www.meanwell.com/productPdf.aspx?i=675;DigiKey;1866-3009-ND;5V
+6;4A RMS, 400-700V Off-State Voltage, Sensitive Gate Triac, TO-220;TIC206;Q1;TIC206;TO-220-3_Vertical;1;http://www.farnell.com/datasheets/56922.pdf;Conrad;186333 - 62;
+7;Resistor;R;R1 R2 R3 R4 R5;R;R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal;5;~;;;DIM
+8;Flash symbol, small;SYM_Flash_Small;SYM1 SYM2;SYM_Flash_Small;Symbol_Highvoltage_Type1_CopperTop_Small;2;~;;;DNP
+9;DC Optocoupler Base Connected, Vce 30V, CTR 20%, Viso 2500V, DIP6;4N25;U2;4N25;DIP-6_W7.62mm;1;https://www.vishay.com/docs/83725/4n25.pdf;DigiKey;160-1300-5-ND;DIM
+10;Random Phase Opto-Triac, Vdrm 400V, Ift 15mA, DIP6;MOC3021M;U1;MOC3021M;DIP-6_W7.62mm;1;http://www.fairchildsemi.com/ds/MO/MOC3020M.pdf;DigiKey;MOC3021MLT-ND;DIM

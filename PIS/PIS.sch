@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "NodeMCU_PIS"
-Date "2020-03-29"
+Date "2020-10-04"
 Rev ""
 Comp "https://nerdyscout.github.io/NodeMCU/PIS"
 Comment1 ""
@@ -62,7 +62,7 @@ F 0 "LOGO1" H 7250 7236 50  0001 C CNN
 F 1 "Logo_Open_Hardware_Small" H 7250 7145 50  0001 C CNN
 F 2 "Symbol:OSHW-Symbol_6.7x6mm_SilkScreen" H 7250 7144 50  0001 C CNN
 F 3 "~" H 7250 6850 50  0001 C CNN
-F 4 "DNP" H 7250 6850 50  0001 C CNN "Variant"
+F 4 "dnp" H 7250 6850 50  0001 C CNN "Variant"
 	1    7250 6850
 	1    0    0    -1  
 $EndComp
@@ -78,7 +78,7 @@ F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 3550 2250 50 
 F 3 "http://akizukidenshi.com/download/ds/aosong/DHT11.pdf" H 3550 2250 50  0001 C CNN
 F 4 "DigiKey" H 3400 2000 50  0001 C CNN "Distributor"
 F 5 "1528-1228-ND" H 3400 2000 50  0001 C CNN "Part Number"
-F 6 "PIS" H 3400 2000 50  0001 C CNN "Variant"
+F 6 "+PIS,-IR" H 3400 2000 50  0001 C CNN "Variant"
 	1    3400 2000
 	-1   0    0    -1  
 $EndComp
@@ -151,7 +151,7 @@ F 0 "R1" H 2750 1600 50  0000 L CNN
 F 1 "10k" H 2900 1500 50  0000 R CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2930 1550 50  0001 C CNN
 F 3 "~" H 3000 1550 50  0001 C CNN
-F 4 "PIS" H 3000 1550 50  0001 C CNN "Variant"
+F 4 "+PIS,-IR" H 3000 1550 50  0001 C CNN "Variant"
 	1    3000 1550
 	-1   0    0    1   
 $EndComp
@@ -176,12 +176,12 @@ F 0 "J1" H 7718 4425 50  0000 C CNN
 F 1 "Capacitive Sensor" H 7718 4516 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7800 4750 50  0001 C CNN
 F 3 "~" H 7800 4750 50  0001 C CNN
-F 4 "PIS" H 7800 4750 50  0001 C CNN "Variant"
+F 4 "+PIS,-IR" H 7800 4750 50  0001 C CNN "Variant"
 	1    7800 4750
 	-1   0    0    1   
 $EndComp
 $Comp
-L PIS-rescue:NodeMCU1.0(ESP-12E)-ESP8266 U1
+L ESP8266:NodeMCU_1.0_(ESP-12E) U1
 U 1 1 5B936524
 P 8100 2000
 F 0 "U1" H 8100 3050 60  0000 C CNN
@@ -229,6 +229,7 @@ F 0 "J3" V 9714 2280 50  0000 L CNN
 F 1 "Serial" V 9623 2280 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 9750 2100 50  0001 C CNN
 F 3 "~" H 9750 2100 50  0001 C CNN
+F 4 "dnp" H 9750 2100 50  0001 C CNN "Variant"
 	1    9750 2100
 	0    1    -1   0   
 $EndComp
@@ -244,7 +245,7 @@ F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3500 5425 50  0001 L CIN
 F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 3300 5500 50  0001 L CNN
 F 4 "DigiKey" H 3300 5500 50  0001 C CNN "Distributor"
 F 5 "BC547-ND" H 3300 5500 50  0001 C CNN "Part Number"
-F 6 "PIS" H 3300 5500 50  0001 C CNN "Variant"
+F 6 "+PIS,-IR" H 3300 5500 50  0001 C CNN "Variant"
 	1    3300 5500
 	1    0    0    -1  
 $EndComp
@@ -280,7 +281,7 @@ F 0 "J2" H 4968 1675 50  0000 C CNN
 F 1 "Conn_01x03" H 4968 1766 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5050 2000 50  0001 C CNN
 F 3 "~" H 5050 2000 50  0001 C CNN
-F 4 "PIS" H 5050 2000 50  0001 C CNN "Variant"
+F 4 "+PIS,-IR" H 5050 2000 50  0001 C CNN "Variant"
 	1    5050 2000
 	-1   0    0    1   
 $EndComp
@@ -292,7 +293,7 @@ F 0 "R2" H 5500 1650 50  0000 L CNN
 F 1 "10k" H 5650 1550 50  0000 R CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5680 1600 50  0001 C CNN
 F 3 "~" H 5750 1600 50  0001 C CNN
-F 4 "PIS" H 5750 1600 50  0001 C CNN "Variant"
+F 4 "+PIS,-IR" H 5750 1600 50  0001 C CNN "Variant"
 	1    5750 1600
 	-1   0    0    1   
 $EndComp
@@ -304,7 +305,7 @@ F 0 "R3" H 5500 2450 50  0000 L CNN
 F 1 "10k" H 5650 2350 50  0000 R CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5680 2400 50  0001 C CNN
 F 3 "~" H 5750 2400 50  0001 C CNN
-F 4 "PIS" H 5750 2400 50  0001 C CNN "Variant"
+F 4 "+PIS,-IR" H 5750 2400 50  0001 C CNN "Variant"
 	1    5750 2400
 	-1   0    0    1   
 $EndComp
@@ -405,7 +406,7 @@ F 0 "K1" H 4580 4746 50  0000 L CNN
 F 1 "G5V-1" H 4580 4655 50  0000 L CNN
 F 2 "Relay_THT:Relay_SPDT_Omron_G5V-1" H 5280 4670 50  0001 C CNN
 F 3 "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g5v_1.pdf" H 4150 4700 50  0001 C CNN
-F 4 "PIS" H 4150 4700 50  0001 C CNN "Variant"
+F 4 "+PIS,-IR" H 4150 4700 50  0001 C CNN "Variant"
 	1    4150 4700
 	1    0    0    1   
 $EndComp
@@ -417,7 +418,7 @@ F 0 "D1" V 3354 4829 50  0000 L CNN
 F 1 "1N4148" V 3445 4829 50  0000 L CNN
 F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 3400 4575 50  0001 C CNN
 F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 3400 4750 50  0001 C CNN
-F 4 "PIS" H 3400 4750 50  0001 C CNN "Variant"
+F 4 "+PIS,-IR" H 3400 4750 50  0001 C CNN "Variant"
 	1    3400 4750
 	0    -1   1    0   
 $EndComp
@@ -429,7 +430,7 @@ F 0 "LOGO2" H 7250 7236 50  0001 C CNN
 F 1 "Logo_Open_Hardware_Small" H 7250 7145 50  0001 C CNN
 F 2 "Symbol:KiCad-Logo_6mm_SilkScreen" H 7250 7144 50  0001 C CNN
 F 3 "~" H 7250 6850 50  0001 C CNN
-F 4 "DNP" H 7250 6850 50  0001 C CNN "Variant"
+F 4 "dnp" H 7250 6850 50  0001 C CNN "Variant"
 	1    7250 6850
 	1    0    0    -1  
 $EndComp
@@ -465,7 +466,6 @@ F 0 "D2" V 2039 4383 50  0000 R CNN
 F 1 "LED" V 1948 4383 50  0000 R CNN
 F 2 "LED_THT:LED_D5.0mm" H 2000 4500 50  0001 C CNN
 F 3 "~" H 2000 4500 50  0001 C CNN
-F 4 "PIS, IR" H 2000 4500 50  0001 C CNN "Variant"
 	1    2000 4500
 	0    -1   -1   0   
 $EndComp
@@ -483,7 +483,6 @@ F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2100 5425 50  0001 L CIN
 F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 1900 5500 50  0001 L CNN
 F 4 "DigiKey" H 1900 5500 50  0001 C CNN "Distributor"
 F 5 "BC547-ND" H 1900 5500 50  0001 C CNN "Part Number"
-F 6 "PIS, IR" H 1900 5500 50  0001 C CNN "Variant"
 	1    1900 5500
 	1    0    0    -1  
 $EndComp
@@ -510,6 +509,7 @@ F 0 "TP1" V 8854 2188 50  0001 L CNN
 F 1 "CLK" V 8900 2188 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9100 2000 50  0001 C CNN
 F 3 "~" H 9100 2000 50  0001 C CNN
+F 4 "dnp" H 8900 2000 50  0001 C CNN "Variant"
 	1    8900 2000
 	0    1    1    0   
 $EndComp
@@ -521,6 +521,7 @@ F 0 "TP2" V 8854 2288 50  0001 L CNN
 F 1 "MISO" V 8900 2288 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9100 2100 50  0001 C CNN
 F 3 "~" H 9100 2100 50  0001 C CNN
+F 4 "dnp" H 8900 2100 50  0001 C CNN "Variant"
 	1    8900 2100
 	0    1    1    0   
 $EndComp
@@ -532,6 +533,7 @@ F 0 "TP3" V 8854 2388 50  0001 L CNN
 F 1 "MOSI" V 8900 2388 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9100 2200 50  0001 C CNN
 F 3 "~" H 9100 2200 50  0001 C CNN
+F 4 "dnp" H 8900 2200 50  0001 C CNN "Variant"
 	1    8900 2200
 	0    1    1    0   
 $EndComp
@@ -543,6 +545,7 @@ F 0 "TP4" V 8854 2488 50  0001 L CNN
 F 1 "CS" V 8900 2488 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9100 2300 50  0001 C CNN
 F 3 "~" H 9100 2300 50  0001 C CNN
+F 4 "dnp" H 8900 2300 50  0001 C CNN "Variant"
 	1    8900 2300
 	0    1    1    0   
 $EndComp
@@ -554,7 +557,6 @@ F 0 "R4" H 1800 4950 50  0000 L CNN
 F 1 "100" H 1900 5050 50  0000 R CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 1930 5000 50  0001 C CNN
 F 3 "~" H 2000 5000 50  0001 C CNN
-F 4 "PIS, IR" H 2000 5000 50  0001 C CNN "Variant"
 	1    2000 5000
 	-1   0    0    1   
 $EndComp
@@ -572,7 +574,7 @@ F 0 "J4" H 5700 4500 50  0000 C CNN
 F 1 "Screw_Terminal_01x04" V 5850 4800 50  0001 C CNN
 F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-4_1x04_P2.54mm_Horizontal" H 5700 4800 50  0001 C CNN
 F 3 "~" H 5700 4800 50  0001 C CNN
-F 4 "PIS" H 5700 4800 50  0001 C CNN "Variant"
+F 4 "+PIS,-IR" H 5700 4800 50  0001 C CNN "Variant"
 	1    5700 4800
 	1    0    0    1   
 $EndComp
@@ -665,7 +667,7 @@ F 0 "J5" H 9218 4425 50  0000 C CNN
 F 1 "Resistive Sensor" H 9218 4516 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 9300 4850 50  0001 C CNN
 F 3 "~" H 9300 4850 50  0001 C CNN
-F 4 "PIS" H 9300 4850 50  0001 C CNN "Variant"
+F 4 "+PIS,-IR" H 9300 4850 50  0001 C CNN "Variant"
 	1    9300 4850
 	-1   0    0    1   
 $EndComp
@@ -685,7 +687,7 @@ F 0 "U2" H 5788 7425 50  0000 C CNN
 F 1 "TSOP17xx" H 5788 7334 50  0000 C CNN
 F 2 "OptoDevice:Vishay_CAST-3Pin" H 5750 6625 50  0001 C CNN
 F 3 "http://www.micropik.com/PDF/tsop17xx.pdf" H 6450 7300 50  0001 C CNN
-F 4 "IR" H 5800 7000 50  0001 C CNN "Variant"
+F 4 "+IR,-PIS" H 5800 7000 50  0001 C CNN "Variant"
 	1    5800 7000
 	-1   0    0    -1  
 $EndComp
@@ -723,7 +725,7 @@ F 0 "JP1" H 4150 7235 50  0000 C CNN
 F 1 "Jumper_2_Open" H 4150 7144 50  0000 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 4150 7000 50  0001 C CNN
 F 3 "~" H 4150 7000 50  0001 C CNN
-F 4 "DNP" H 4150 7000 50  0001 C CNN "Variant"
+F 4 "dnp" H 4150 7000 50  0001 C CNN "Variant"
 	1    4150 7000
 	1    0    0    -1  
 $EndComp
@@ -801,10 +803,10 @@ MQTT
 Text Notes 4375 2075 0    50   ~ 0
 use to detect \nwater level
 $Comp
-L Motor:Motor_DC #M?
+L Motor:Motor_DC #M1
 U 1 1 5E81B505
 P 6325 4700
-F 0 "#M?" H 6150 4700 50  0001 R CNN
+F 0 "#M1" H 6150 4700 50  0001 R CNN
 F 1 "Motor_DC" H 6150 4650 50  0001 R CNN
 F 2 "" H 6325 4610 50  0001 C CNN
 F 3 "~" H 6325 4610 50  0001 C CNN
