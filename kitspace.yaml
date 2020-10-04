@@ -3,22 +3,32 @@ multi:
     site: https://nerdyscout.github.io/NodeMCU/PIS
     summary: Plant Irrigation System with NodeMCU_Amica
     readme: PIS/README.md
-    bom: PIS/gerbers/PIS_BOM.csv
+    bom: PIS/gerbers/PIS_BOM_PIS.csv
     eda:
       type: kicad
       pcb: PIS/PIS.kicad_pcb
     gerbers: PIS/gerbers
     color: green
-  PWR:
-    site: https://nerdyscout.github.io/NodeMCU/PWR
-    summary: 230V AC phase dimmer module for NodeMCU_Amica
-    readme: PWR/README.md
-    bom: PWR/gerbers/PWR_BOM.csv
+  IR:
+    site: https://nerdyscout.github.io/NodeMCU/IR
+    summary: IT-MQTT Bridge
+    readme: IR/README.md
+    bom: PIS/gerbers/PIS_BOM_IR.csv
     eda:
       type: kicad
-      pcb: PWR/PWR.kicad_pcb
-    gerbers: PWR/gerbers
+      pcb: PIS/PIS.kicad_pcb
+    gerbers: PIS/gerbers
     color: green
+#  PWR:
+#    site: https://nerdyscout.github.io/NodeMCU/PWR
+#    summary: 230V AC phase dimmer module for NodeMCU_Amica
+#    readme: PWR/README.md
+#    bom: PWR/gerbers/PWR_BOM.csv
+#    eda:
+#      type: kicad
+#      pcb: PWR/PWR.kicad_pcb
+#    gerbers: PWR/gerbers
+#    color: green
   CO2:
     site: https://nerdyscout.github.io/NodeMCU/CO2
     summary: CO2 Measurment with NodeMCU

@@ -8,14 +8,7 @@ Plant Irrigation Shield for the NodeMCU_Amica.
 ## Layout
 ![top](docs/img/PIS-Board_top.svg) ![bottom](docs/img/PIS-Board_bottom.svg)
 
-## Documentation 
-
-This PCB can be assembled in two variants with complete independent functions.
-
-### Variant: Plant Irrigation System
-
-#### Assembling
-
+## Assembling
 <img src="IMG_20200221_150840.jpg" width="250" alt="IMG_20200221_150840.jpg"> <img src="IMG_20200221_150518.jpg" width="250" alt="IMG_20200221_150518.jpg">
 
 - Assemble all parts according [BOM](gerbers/PIS_BOM_PIS.csv)
@@ -24,8 +17,7 @@ This PCB can be assembled in two variants with complete independent functions.
   - the pullup/pulldown resistors should only be placed if needed 
   - leave JP1 open
 
-#### Software
-
+## Software
 you could run [Tasmota](https://github.com/arendst/Tasmota) and set a few configurations
 
 <img src="tasmota_config_pis.png" width="250" alt="tasmota_config_pis.png">
@@ -47,19 +39,4 @@ Rule2 on
 ```
 
 Changing mem1 value (can also be done via MQTT) results in new nominal value, every plant may need other value depending on size, soil, sunlight, ... so you need to play a bit to find a good value. 
-
-### Variant: Powerfull Infrared Span
-
-this is an MQTT-IR Bridge
-
-#### Assembling
-
-- Assemble all parts according [BOM](PIS_bom_IR.csv)
-  - make R4 fit to your LED, it might be even 0Ohm
-  - close JP1
-
-#### Software
-
-Just use [Tasmota](https://github.com/arendst/Tasmota) and 
-todo: further description
 
