@@ -1,6 +1,8 @@
 # NodeMCU_PIS
 
-Plant Irrigation Shield for the NodeMCU_Amica.
+Plant Irrigation Shield for the NodeMCU_ESP8266.
+
+This project combines one soil sensor (resistive or capacetive), one 5V pump in a water tank and a floating switch to detect the water level. Depending on the soil measurment and the configured nominal value the pump can be controlled while the floating switch prevents the pump from running dry. All configurations can be controlled via MQTT.
 
 ## Schematic
 [![schematic](docs/NodeMCU_PIS-Schematic.svg)](docs/NodeMCU_PIS-Schematic.pdf)

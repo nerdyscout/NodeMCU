@@ -9,7 +9,7 @@ IR-MQTT bridge
 ![top](../PIS/docs/img/PIS-Board_top.svg) ![bottom](../PIS/docs/img/PIS-Board_bottom.svg)
 
 ## Assembling
-- Assemble all parts according [BOM](../PIS/gerbers/PIS_bom_IR.csv)
+- Assemble all parts according [BOM](../PIS/gerbers/PIS_BOM_IR.csv)
   - make R4 fit to your LED, it might be even 0Ohm
   - close JP1
 
