@@ -1,4 +1,4 @@
-update=Sun Oct  4 09:48:33 2020
+update=Sat Oct 10 09:04:45 2020
 version=1
 last_client=eeschema
 [general]
@@ -58,7 +58,7 @@ OthersTextSizeThickness=0.15
 OthersTextItalic=0
 OthersTextUpright=1
 SolderMaskClearance=0.2
-SolderMaskMinWidth=0.25
+SolderMaskMinWidth=0.125
 SolderPasteClearance=0
 SolderPasteRatio=-0
 [pcbnew/Layer.F.Cu]
