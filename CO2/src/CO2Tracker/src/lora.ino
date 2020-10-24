@@ -15,14 +15,19 @@
     void tLORA_send(){
         lora.sendData(loraData, sizeof(loraData), lora.frameCounter);
         lora.frameCounter++;
+        __DBG__
     }
 
     bool tLORA_init(){
+        __DBG__
         bool status= lora.begin();
+        __DBG__
         if (status) {
+            __DBG__
             lora.setChannel(MULTI);
             lora.setDatarate(SF7BW125);
         }
+        __DBG__
         return status;
     }
 #endif

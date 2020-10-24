@@ -4,27 +4,40 @@
 #include <Adafruit_Sensor.h>
 #include <SPI.h>
 
-//#define __VERSION__ '0.0.1'
+//#define __VERSION__ "0.0.1"
 
 #define DEBUG true
-#define GPS true
-#define LORA true
-#define BME true
-#define SDC true
+#define GPS false
+#define LORA false
+#define BME false
+#define SDC false
 #define LED true
+
+//Tasks
+Scheduler taskmgr;
 
 #if DEBUG
   #define debugPin 1
   SoftwareSerial Debug (debugPin,debugPin);
   String dbg="";
+  #define __DBG__ {\
+      Debug.print("DBG:"); \
+      Debug.print(__FILE__); \
+      Debug.print(":"); \
+      Debug.println(__LINE__); \
+  } 
+#else
+  #define __DBG__
 #endif
 
-//Tasks
-Scheduler taskmgr;
+
 
 #if BME || SDC
   float temperature;
   float humidity;
+#endif
+#if BME || GPS
+  double altitude;
 #endif
 
 #include "bme.ino"
@@ -36,15 +49,25 @@ Scheduler taskmgr;
 void setup() {
   #if DEBUG
     pinMode(debugPin, OUTPUT);
-    Debug.begin(115200);
+    Debug.begin(9600);
+    delay(1000);
     Debug.print("V");
-//    Debug.print(__VERSION__);
+    Debug.print(__VERSION__);
     Debug.print(" build ");
     Debug.println(__DATE__);
     dbg="";
   #endif
 
-  Wire.begin();
+  #if BME || SDC
+    Wire.begin();
+    Wire.setClock(100000L);            // 100 kHz SCD30 
+    Wire.setClockStretchLimit(200000L);// CO2-SCD30
+/*
+  #if DEBUG
+    if (Wire.status() != I2C_OK) Debug.print("ERR:I2C");
+  #endif
+*/
+  #endif
 
   taskmgr.enableAll();  
 }

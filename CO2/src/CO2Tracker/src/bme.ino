@@ -7,15 +7,14 @@
   #define SEALEVELPRESSURE_HPA (1013.25)
   uint32_t pressure;
   uint32_t gas;
-  float altidute;
 
 void tBME_read(){
   if (bme.performReading()){
     temperature = (temperature+bme.temperature)/2;
-    pressure = (pressure+bme.pressure/100)/2;
+    pressure = (pressure+bme.pressure/100)/2; // mbar
     humidity = (humidity+bme.humidity)/2;
     gas = (gas+bme.gas_resistance/1000)/2;
-    altidute = (altidute+bme.readAltitude(SEALEVELPRESSURE_HPA))/2;
+    altitude = (altitude+bme.readAltitude(SEALEVELPRESSURE_HPA))/2;
   }
   #if DEBUG
   else
@@ -26,8 +25,11 @@ void tBME_read(){
 }
 
 bool tBME_init(){
+  __DBG__
   bool status = bme.begin();
+  __DBG__
   if (status) {
+  __DBG__
     // Set up oversampling and filter initialization
     bme.setTemperatureOversampling(BME680_OS_8X);
     bme.setHumidityOversampling(BME680_OS_2X);
@@ -36,10 +38,10 @@ bool tBME_init(){
     bme.setGasHeater(320, 150); // 320*C for 150 ms
 
     temperature = bme.temperature;
-    pressure = bme.pressure/100;
+    pressure = bme.pressure/100; // mbar
     humidity = bme.humidity;
     gas = bme.gas_resistance/1000;
-    altidute = bme.readAltitude(SEALEVELPRESSURE_HPA);
+    altitude = bme.readAltitude(SEALEVELPRESSURE_HPA);
   }
   #if DEBUG
   else
