@@ -8,10 +8,10 @@
 
 #define DEBUG true
 #define GPS false
-#define LORA false
+#define LORA true
 #define BME false
-#define SDC false
-#define LED true
+#define SDC true
+#define LED false
 
 //Tasks
 Scheduler taskmgr;

@@ -16,9 +16,9 @@
     }
 
     void tLED_write(){
-        pixels.setPixelColor(1, pixels.Color(0, 200, 0));
-        pixels.setPixelColor(2, pixels.Color(200, 0, 0));
-        pixels.setPixelColor(3, pixels.Color(0, 0, 200));
+        pixels.setPixelColor(0, pixels.Color(0, 200, 0));
+        pixels.setPixelColor(1, pixels.Color(200, 0, 0));
+        pixels.setPixelColor(2, pixels.Color(0, 0, 200));
         pixels.setBrightness(100);
         pixels.show();
         __DBG__
