@@ -15,6 +15,3 @@ SCD30 airSensor;
 #if CO2 == SDC
   uint16_t co2;
 #endif
-
-extern float altitude;
-extern uint16_t pressure;

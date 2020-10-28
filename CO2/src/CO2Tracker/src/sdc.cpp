@@ -20,6 +20,11 @@ void tSDC_read(){
     #if SDC == HUMIDITY
         humidity = (humidity+airSensor.getHumidity())/2;
     #endif
+
+    #if DEBUG
+        Debug.print("DBG:BME:CO2");
+        Debug.println(co2);
+    #endif
 }
 
 bool tSDC_init() {

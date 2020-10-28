@@ -20,10 +20,6 @@ void tBME_read(){
     #endif
   }
   #if DEBUG
-  else
-  {
-      dbg+="\nERR:BME:READ";
-  }
   #endif
 }
 
@@ -53,11 +49,5 @@ bool tBME_init(){
       altitude = bme.readAltitude(SEALEVELPRESSURE_HPA);
     #endif
   }
-  #if DEBUG
-  else
-  {
-    dbg += "\nERR:BME:INIT";
-  }
-  #endif
   return status;
 }

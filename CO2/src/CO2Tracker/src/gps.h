@@ -23,7 +23,3 @@ SoftwareSerial sGPS (gpsPin,gpsPin);
 #if ALTITUDE == GPS
     float altitude;
 #endif
-
-#if ALTITUDE == GPS
-  float altitude;
-#endif

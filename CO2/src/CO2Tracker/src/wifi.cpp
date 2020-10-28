@@ -1,7 +1,6 @@
 #include "main.h"
 #include "wifi.h"
 
-
 //flag for saving data
 bool shouldSaveConfig = false;
 
@@ -13,39 +12,46 @@ void saveConfigCallback () {
     shouldSaveConfig = true;
 }
 
-
 void handleRoot() {
 // Allocate JsonBuffer
 // Use arduinojson.org/assistant to compute the capacity.
 StaticJsonBuffer<500> jsonBuffer;
-
 JsonArray& array = jsonBuffer.createArray();
 
-#if defined(LONGITUDE) && defined(LATITUDE) 
-    JsonObject& position = array.createNestedObject();
-    position["latitude"] = latitude;
-    position["longitude"] = longitude;
-    // position["altitude"] = cfg_altitude;
-#endif
+    #ifdef LOCATION 
+        JsonObject& position = array.createNestedObject();
+        position["latitude"] = latitude;
+        position["longitude"] = longitude;
+        #ifdef ALTITUDE
+            position["altitude"] = cfg_altitude;
+        #endif
+    #endif
 
-#ifdef TEMPERATURE
     JsonObject& ambience = array.createNestedObject();
-    ambience["temperature"] = temperature;
-    ambience["humidity"] = humidity;
-    ambience["co2"] = co2;
-#endif
+    #ifdef TEMPERATURE
+        ambience["temperature"] = temperature;
+    #endif
+    #ifdef HUMIDITY
+        ambience["humidity"] = humidity;
+    #endif
+    #ifdef CO2
+        ambience["co2"] = co2;
+    #endif
 
 // Write JSON document  
 String var;
 array.prettyPrintTo(var);
-server.send(200, "text/plain", var);
+server.send(200, "application/json", var);
 
 }
 /*
 // GEOLOCATION via WIFI
-#if !GPS
-    String GeoLocAPIKey = "****";
+#if LOCATION == GEOIP
+    #include <TaskScheduler.h>
+//    #include <IPGeolocation.h>
 
+    extern Scheduler taskmgr; 
+    String GeoLocAPIKey = "****";
 
     void tWIFIGEO_handle(); 
     Task tWIFIGEO(TASK_HOUR, TASK_FOREVER, &tWIFIGEO_handle, &taskmgr, false);
@@ -98,14 +104,11 @@ bool tWIFI_init() {
                 strcpy(mqtt_server, json["mqtt_server"]);
                 strcpy(mqtt_port, json["mqtt_port"]);
                 strcpy(cfg_altitude, json["altitude"]);
+                altitude=(int)cfg_altitude;
                 if(json["ip"]) {
                     strcpy(static_ip, json["ip"]);
                     strcpy(static_gw, json["gateway"]);
                     strcpy(static_sn, json["subnet"]);
-                    #if DEBUG
-                        Debug.println("setting custom ip from config");
-                        Debug.println(static_ip);
-                    #endif
                 }
             } else {
                 #if DEBUG
@@ -158,7 +161,7 @@ else {
     //sets timeout until configuration portal gets turned off
     //useful to make it all retry or go to sleep
     //in seconds
-    //wifiManager.setTimeout(120);
+    wifiManager.setTimeout(120);
 
     //fetches ssid and pass and tries to connect
     //if it does not connect it starts an access point with the specified name

@@ -1,5 +1,22 @@
 #include <Arduino.h>
+#include <SoftwareSerial.h>
 
+// DEBUG
+#define DEBUG 1 // 1 - not TRUE !
+#if DEBUG
+    #ifndef __DBG__
+        extern SoftwareSerial Debug;
+        extern String dbg;
+        #define __DBG__ {\
+            Debug.print("DBG:"); \
+            Debug.print(__FILE__); \
+            Debug.print(":"); \
+            Debug.println(__LINE__); \
+        }
+    #endif
+#endif
+
+#define CFG 000     // config
 // ambience
 #define SDC 100     // temperature, humidity, co2
 #define BME680 101  // temperature, humidity, altitude, gas
@@ -13,25 +30,26 @@
 // radio
 #define WLAN 400
 #define LORA 401
-// RTC
+// date, time
 #define RTC 500     // date, time
 #define NTP 501     // date, time
 // logging
 #define SD 600
 #define ROM 601
 
+
 // mapping
 #define CO2 SDC
-#define GAS BME680
+//#define GAS BME680
 #define TEMPERATURE SDC
-#define HUMIDITY BME680
-#define PRESSURE BME680
-#define LOCATION GPS
-#define ALTITUDE BME680
-#define DATE GPS
-#define TIME GPS
-#define RFM95 LORA
-#define WIFI WLAN
+#define HUMIDITY SDC
+//#define PRESSURE BME680
+#define ALTITUDE CFG
+#define LOCATION GEOIP
+#define DATE GEOIP
+#define TIME GEOIP
+//#define RFM95 LORA
+//#define WIFI WLAN
 
 extern void tBME_read(); extern bool tBME_init();
 extern void tSDC_read(); extern bool tSDC_init();

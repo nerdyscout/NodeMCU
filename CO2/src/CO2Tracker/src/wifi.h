@@ -4,7 +4,23 @@
 #include <ESP8266WebServer.h>
 #include <WiFiManager.h>          //https://github.com/tzapu/WiFiManager
 #include <ArduinoJson.h>          //https://github.com/bblanchon/ArduinoJson
-//    #include "IPGeolocation.h"
+
+//#include <IPGeolocation.h>
+
+
+#if DATE == GEOIP
+    uint8_t month, day;
+    uint16_t year;
+#endif
+
+#if TIME == GEOIP
+    uint8_t hour, second, minute;
+#endif
+
+#if LOCATION == GEOIP
+    double latitude, longitude;
+#endif
+
 
 void tWIFI_handle(); bool tWIFI_init();
 
@@ -14,6 +30,9 @@ void tWIFI_handle(); bool tWIFI_init();
 char mqtt_server[40];
 char mqtt_port[6] = "8080";
 char cfg_altitude [4];
+#if ALTITUDE == CFG
+    float altitude;
+#endif
 
 char static_ip[16] = "10.0.1.56";
 char static_gw[16] = "10.0.1.1";

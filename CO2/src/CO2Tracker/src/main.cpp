@@ -1,26 +1,14 @@
 #include <TaskScheduler.h>
 #include <SPI.h>
 #include <Wire.h>
-#include "main.h"
 
 //#define __VERSION__ "0.0.1"
 
-// DEBUG
-#define DEBUG 1 // 1 - not TRUE !
-#if DEBUG
-    #include <SoftwareSerial.h>
-    #define debugPin 1
-    SoftwareSerial Debug (debugPin,debugPin);
-    String dbg="";
-    #define __DBG__ {\
-        Debug.print("DBG:"); \
-        Debug.print(__FILE__); \
-        Debug.print(":"); \
-        Debug.println(__LINE__); \
-    } 
-#else
-  #define __DBG__
-#endif
+#include <SoftwareSerial.h>
+#define debugPin 1
+String dbg="";
+SoftwareSerial Debug (debugPin,debugPin);
+#include "main.h"
 
 //Tasks
 Scheduler taskmgr;
@@ -40,7 +28,6 @@ void setup() {
     Debug.print(__VERSION__);
     Debug.print(" build ");
     Debug.println(__DATE__);
-    dbg="";
   #endif
 
   Wire.begin();
@@ -55,10 +42,4 @@ void setup() {
 
 void loop() {
   taskmgr.execute();
-  #if DEBUG
-    if (dbg!=""){
-      Debug.print(dbg);
-      dbg="";
-    }
-  #endif
 }
