@@ -1,50 +1,35 @@
-#include <Arduino.h>
 #include <TaskScheduler.h>
-#include <SoftwareSerial.h>
-#include <Adafruit_Sensor.h>
 #include <SPI.h>
+#include <Wire.h>
+#include "main.h"
 
 //#define __VERSION__ "0.0.1"
 
-#define DEBUG true
-#define GPS false
-#define LORA true
-#define BME false
-#define SDC true
-#define LED false
-
-//Tasks
-Scheduler taskmgr;
-
+// DEBUG
+#define DEBUG 1 // 1 - not TRUE !
 #if DEBUG
-  #define debugPin 1
-  SoftwareSerial Debug (debugPin,debugPin);
-  String dbg="";
-  #define __DBG__ {\
-      Debug.print("DBG:"); \
-      Debug.print(__FILE__); \
-      Debug.print(":"); \
-      Debug.println(__LINE__); \
-  } 
+    #include <SoftwareSerial.h>
+    #define debugPin 1
+    SoftwareSerial Debug (debugPin,debugPin);
+    String dbg="";
+    #define __DBG__ {\
+        Debug.print("DBG:"); \
+        Debug.print(__FILE__); \
+        Debug.print(":"); \
+        Debug.println(__LINE__); \
+    } 
 #else
   #define __DBG__
 #endif
 
-
-
-#if BME || SDC
-  float temperature;
-  float humidity;
-#endif
-#if BME || GPS
-  double altitude;
-#endif
-
-#include "bme.ino"
-#include "gps.ino"
-#include "led.ino"
-#include "lora.ino"
-#include "sdc.ino"
+//Tasks
+Scheduler taskmgr;
+Task tBME(10 * TASK_SECOND, TASK_FOREVER, &tBME_read, &taskmgr, false, &tBME_init);
+Task tSDC(30 * TASK_SECOND, TASK_FOREVER, &tSDC_read, &taskmgr, false, &tSDC_init);
+Task tGPS(TASK_MINUTE, TASK_FOREVER, &tGPS_read, &taskmgr, false, &tGPS_init);
+Task tLED(TASK_SECOND, TASK_FOREVER, &tLED_write, &taskmgr, false,&tLED_init);
+Task tLORA(TASK_MINUTE, TASK_FOREVER, &tLORA_send, &taskmgr, false, &tLORA_init);
+Task tWIFI(TASK_IMMEDIATE , TASK_FOREVER, &tWIFI_handle, &taskmgr, false, &tWIFI_init);
 
 void setup() {
   #if DEBUG
@@ -58,18 +43,14 @@ void setup() {
     dbg="";
   #endif
 
-  #if BME || SDC
-    Wire.begin();
-    Wire.setClock(100000L);            // 100 kHz SCD30 
-    Wire.setClockStretchLimit(200000L);// CO2-SCD30
-/*
+  Wire.begin();
+  Wire.setClock(100000L);            // 100 kHz SCD30 
+  Wire.setClockStretchLimit(200000L);// CO2-SCD30
   #if DEBUG
     if (Wire.status() != I2C_OK) Debug.print("ERR:I2C");
   #endif
-*/
-  #endif
 
-  taskmgr.enableAll();  
+  taskmgr.enableAll();
 }
 
 void loop() {
