@@ -29,14 +29,14 @@ multi:
 #      pcb: PWR/PWR.kicad_pcb
 #    gerbers: PWR/gerbers
 #    color: green
-  NodeMCU_CO2:
-    site: https://nerdyscout.github.io/NodeMCU/CO2
-    summary: CO2 Measurment with NodeMCU_ESP8266
-    readme: CO2/README.md
-    bom: CO2/gerbers/CO2_BOM_CO2.csv
-    eda:
-      type: kicad
-      pcb: CO2/CO2.kicad_pcb
-    gerbers: CO2/gerbers
-    color: green
+#  NodeMCU_CO2:
+#    site: https://nerdyscout.github.io/NodeMCU/CO2
+#    summary: CO2 Measurment with NodeMCU_ESP8266
+#    readme: CO2/README.md
+#    bom: CO2/gerbers/CO2_BOM_CO2.csv
+#    eda:
+#      type: kicad
+#      pcb: CO2/CO2.kicad_pcb
+#    gerbers: CO2/gerbers
+#    color: green
 
