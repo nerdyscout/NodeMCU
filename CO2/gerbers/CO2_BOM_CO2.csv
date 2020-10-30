@@ -6,11 +6,13 @@ Component;Description;Part;References;Value;Footprint;Quantity Per PCB;Datasheet
 5;coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, ...);Conn_Coaxial;J1 J5;Conn_Coaxial;U.FL_Hirose_U.FL-R-SMT-1_Vertical;2; ~;-CO2,+IOT
 6;Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/);Conn_01x04;J2;Display;PinHeader_1x04_P2.54mm_Vertical;1;~;PIS
 7;Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/);Conn_01x02;J4;JST;JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal;1;~;
-8;NPN transistor, base/collector/emitter;Q_NPN_BCE;Q1;Q_NPN_BCE;SOT-23;1;~;
-9;Resistor;R;R1 R2 R3 R5 R6 R7;1k;R_0603_1608Metric;6;~;-CO2,+IOT
-10;Resistor;R;R4;2k;R_0603_1608Metric;1;~;
-11;600mA low dropout linear regulator, with enable pin, 3.8V-6V input voltage range, 3.3V fixed positive output, SOT-23-5 package;AP2112K-3.3;U5;AP2112K-3.3;SOT-23-5;1;https://www.diodes.com/assets/Datasheets/AP2112.pdf;
-12;4-in-1 sensor, gas, humidity, pressure, temperature, I2C and SPI interface, 1.71-3.6V, LGA-8;BME680;U6;BME680;Bosch_LGA-8_3x3mm_P0.8mm_ClockwisePinNumbering;1;https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME680-DS001.pdf;
-13;GNSS Module M8, VCC 2.7V to 3.6V;MAX-8Q;U3;MAX-8Q;ublox_MAX;1;https://www.u-blox.com/sites/default/files/MAX-8_DataSheet_%28UBX-16000093%29.pdf;-CO2,+IOT
-14;Single cell, Li-Ion/Li-Po charge management controller, 4.20V, Tri-State Status Output, in SOT23-5 package;MCP73831-2-OT;U4;MCP73831-2-OT;SOT-23-5;1;http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf;
-15;Low power long range transceiver module, SPI and parallel interface, 868 MHz, spreading factor 6 to12, bandwith 7.8 to 500kHz, -111 to -148 dBm, SMD-16, DIP-16;RFM95W-868S2;U2;RFM95W-868S2;HOPERF_RFM9XW_SMD;1;https://www.hoperf.com/data/upload/portal/20181127/5bfcbea20e9ef.pdf;-CO2,+IOT
+8;Micro SD Card Socket with card detection pins;Micro_SD_Card_Det;J3;Micro_SD_Card_Det;microSD_HC_Molex_104031-0811;1;https://www.hirose.com/product/en/download_file/key_name/DM3/category/Catalog/doc_file_id/49662/?file_category_id=4&item_id=195&is_series=1;
+9;Inductor, small symbol;L_Small;L1;L_Small;L_0402_1005Metric;1;~;
+10;Resistor;R;R1 R2 R3 R7;1k;R_0603_1608Metric;4;~;-CO2,+IOT
+11;Resistor;R;R8;1k;R_0402_1005Metric;1;~;-CO2,+IOT
+12;Resistor;R;R4;2k;R_0603_1608Metric;1;~;
+13;600mA low dropout linear regulator, with enable pin, 3.8V-6V input voltage range, 3.3V fixed positive output, SOT-23-5 package;AP2112K-3.3;U5;AP2112K-3.3;SOT-23-5;1;https://www.diodes.com/assets/Datasheets/AP2112.pdf;
+14;4-in-1 sensor, gas, humidity, pressure, temperature, I2C and SPI interface, 1.71-3.6V, LGA-8;BME680;U6;BME680;Bosch_LGA-8_3x3mm_P0.8mm_ClockwisePinNumbering;1;https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME680-DS001.pdf;
+15;GNSS Module M8, VCC 2.7V to 3.6V;MAX-8Q;U3;MAX-8Q;ublox_MAX;1;https://www.u-blox.com/sites/default/files/MAX-8_DataSheet_%28UBX-16000093%29.pdf;-CO2,+IOT
+16;Single cell, Li-Ion/Li-Po charge management controller, 4.20V, Tri-State Status Output, in SOT23-5 package;MCP73831-2-OT;U4;MCP73831-2-OT;SOT-23-5;1;http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf;
+17;Low power long range transceiver module, SPI and parallel interface, 868 MHz, spreading factor 6 to12, bandwith 7.8 to 500kHz, -111 to -148 dBm, SMD-16, DIP-16;RFM95W-868S2;U2;RFM95W-868S2;HOPERF_RFM9XW_SMD;1;https://www.hoperf.com/data/upload/portal/20181127/5bfcbea20e9ef.pdf;-CO2,+IOT
